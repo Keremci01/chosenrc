@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChosenRC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
 
+  <header class="navbar">
+    <div class="logo">ChosenRC</div>
+    <nav>
+      <a href="#features">Özellikler</a>
+      <a href="#servers">Sunucular</a>
+      <a href="#login">Giriş</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-left">
+      <span class="badge">TEST BUILD</span>
+      <h1>Oyun topluluğunu tek yerde topla</h1>
+      <p>Sunucular, görevler, profil sistemi ve ödüller için modern bir oyun platformu demosu.</p>
+
+      <div class="hero-buttons">
+        <button id="joinBtn" class="primary">Hemen Başla</button>
+        <button id="steamBtn" class="secondary">Steam ile Giriş</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <strong>12</strong>
+          <span>Aktif Sunucu</span>
+        </div>
+        <div class="stat-card">
+          <strong>1.248</strong>
+          <span>Oyuncu</span>
+        </div>
+        <div class="stat-card">
+          <strong>89</strong>
+          <span>Görev</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="panel">
+        <h3>Oyuncu Profili</h3>
+        <div class="profile">
+          <div class="avatar">K</div>
+          <div>
+            <div class="name">Kerem</div>
+            <div class="rank">Rank: Diamond</div>
+          </div>
+        </div>
+
+        <div class="coins">
+          <span>Coin</span>
+          <strong id="coinCount">1200</strong>
+        </div>
+
+        <button id="rewardBtn" class="reward-btn">50 Coin Kazan</button>
+      </div>
+    </div>
+  </main>
+
+  <section id="features" class="section">
+    <h2>Özellikler</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Görev Sistemi</h3>
+        <p>Günlük ve haftalık görevler tamamlayıp ödül topla.</p>
+      </div>
+      <div class="card">
+        <h3>Profil</h3>
+        <p>Oyuncu kartı, rank ve başarılarını sergile.</p>
+      </div>
+      <div class="card">
+        <h3>Ödüller</h3>
+        <p>Coin biriktir, mağazada kullan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servers" class="section">
+    <h2>Sunucular</h2>
+    <div class="server-list">
+      <div class="server-card">
+        <div>
+          <h3>Chosen Mirage #1</h3>
+          <p>Harita: Mirage • Oyuncu: 14/20</p>
+        </div>
+        <button class="join-server">Katıl</button>
+      </div>
+      <div class="server-card">
+        <div>
+          <h3>Chosen Dust2 #2</h3>
+          <p>Harita: Dust2 • Oyuncu: 9/20</p>
+        </div>
+        <button class="join-server">Katıl</button>
+      </div>
+      <div class="server-card">
+        <div>
+          <h3>Chosen Arena #3</h3>
+          <p>Mod: Arena • Oyuncu: 18/20</p>
+        </div>
+        <button class="join-server">Katıl</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="login" class="section">
+    <h2>Test Giriş</h2>
+    <form class="login-box" id="loginForm">
+      <input type="text" id="username" placeholder="Kullanıcı adı" required />
+      <input type="password" id="password" placeholder="Şifre" required />
+      <button type="submit" class="primary full">Giriş Yap</button>
+    </form>
+  </section>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
