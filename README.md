@@ -1,0 +1,2 @@
+# chosenrc
+like xplay 
